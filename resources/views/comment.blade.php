@@ -15,7 +15,7 @@
     <!--        <a class="btn btn-warning" href="{{route('post.add')}}" role="button">Add Post</a>-->
 
             <table>
-                <thead>
+                <thead><!---->
                     <th>Id</th>
                     <th>Title</th>
                     <th>Content</th>
