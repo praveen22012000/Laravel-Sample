@@ -15,6 +15,12 @@ class PostController extends Controller
         //return view('dashboard',compact('posts'));
         return view('dashboard',['posts'=>$posts]);
     }
+
+    public function test()
+    {
+        return view('test');
+    }
+
     public function create()
     {
         return view('post.create');

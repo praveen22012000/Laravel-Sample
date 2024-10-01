@@ -11,9 +11,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+Route::get('/mytest', function () {
+    return view('layouts/admin/master');
+});
 
 Route::get('/dashboard',[PostController::class,'index'])->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/test',[PostController::class,'test'])->middleware(['auth', 'verified'])->name('test');
 Route::get('/comment',[CommentController::class,'index'])->middleware(['auth', 'verified'])->name('comment');
 
 Route::middleware('auth')->group(function () {
